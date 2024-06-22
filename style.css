@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body, input, button, select, textarea {
+body, input, select, textarea {
   font-family: "Poppins", sans-serif;
 }
 
@@ -53,7 +53,7 @@ header p {
 
 form {
   margin-top: 38px;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   background: #FAFAFC;
 
   min-height: 300px;
@@ -187,4 +187,41 @@ fieldset legend {
 
 .checkbox-wrapper input:focus + label::before {
   outline: 2px solid black;
+}
+
+footer {
+  background: #F0F0F4;
+
+  height: 136px;
+  display: flex;
+  flex-direction: column;
+  
+  padding: 40px 64px;
+
+  margin-bottom: 100px;
+  border-top: 1px solid #D6D6D6;
+  border-radius: 0 0 8px 8px;
+}
+
+footer .button {
+  height: 56px;
+  border: 0;
+  background: #04D361;
+  border-radius: 8px;
+
+  font-family: "archivo";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #FFFFFF;
+
+}
+
+footer .button:hover {
+  background: #07bd59;
+}
+
+input:invalid {
+  border: 1px solid #FF1010;
 }
