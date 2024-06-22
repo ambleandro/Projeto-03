@@ -222,6 +222,7 @@ footer .button:hover {
   background: #07bd59;
 }
 
-input:invalid {
-  border: 1px solid #FF1010;
-}
+input:focus:invalid:required {
+  outline: 1px solid #ff1010;
+  border: 1px solid transparent;
+  }
